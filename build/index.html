@@ -1,0 +1,193 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generated output.
+  In production mode the html minifcation is enabled by default.
+  If you are not generating a valid html output please disable it manually.
+  You can do so by adding the following setting to your HtmlWebpackPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#options for details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <meta
+        property="og:description"
+        content="an effort to keep everyone updated
+      <meta
+        property="og:image"
+        content="https://www.covid19india.org/thumbnail.png"
+      />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="512" />
+      <meta property="og:image:height" content="512" />
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://www.covid19india.org" />
+      <meta
+        property="twitter:title"
+        content="Coronavirus in India: Latest Map and Case Count"
+      />
+      <meta name="twitter:site" value="@covid19indiaorg" />
+      <meta
+        property="twitter:description"
+        content="effort to keep everyone updated"/>
+      <meta
+        property="twitter:image"
+        content="https://www.covid19india.org/thumbnail.png"/>
+    </head>
+    <body>
+     <header>
+      <img height="125" src="Screenshot 2021-04-13 at 1.57.44 PM.png">
+            <nav>
+              <div class="cov">
+              <h1> COVID 19 TRACKER</h1>
+            </div>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+            <li >
+              <a href="pre.html">Overview</a>
+            </li>
+            <li >
+              <a href="pdf.html">News📰</a>
+            </li>
+            <li>
+              <a href="container.html">Precautions</a>
+            </li> 
+              </ul>
+  <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+          </nav>
+          </header>
+          <script>
+  const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+    navLinks.forEach((link, index) => {
+      if(link.style.animation){
+        link.style.animation = '';
+      }else
+      link.style.animation = 'navLinkFade 0.5s ease forwards ${index /7+0.5}s';
+    });
+    burger.classList.toggle('toggle');
+  });
+  }
+  navSlide();
+          </script>
+        <br><br>
+  <center style="color:blueviolet;"><h1><strong>LIVE DATA FOR CORONA VIRUS 😷</strong></h1>
+  <h3><strong>A HEALTHY OUTSIDE STARTS FROM INSIDE!🍎👨🏼‍⚕️👩🏼‍⚕️
+  <br>
+  STAYING HOME,<BR>
+  SAVES LIVES
+  </strong></h3>
+  </center>
+      <div id="root"> </div>
+  <script>!function(e){function t(t){for(var n,c,a=t[0],d=t[1],u=t[2],i=0,s=[];i<a.length;i++)c  =a[i],Object.prototype.hasOwnProperty.call(f,c)&&f[c]&&s.push(f[c][0]),f[c]=0;for(n in d)Obje  ct.prototype.hasOwnProperty.call(d,n)&&(e[n]=d[n]);for(l&&l(t);s.length;)s.shift()();return o  .push.apply(o,u||[]),r()}function r(){for(var e,t=0;t<o.length;t++){for(var r=o[t],n=!0,c=1;c  <r.length;c++){var d=r[c];0!==f[d]&&(n=!1)}n&&(o.splice(t--,1),e=a(a.s=r[0]))}return e}var n=  {},c={11:0},f={11:0},o=[];function a(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,expo  rts:{}};return e[t].call(r.exports,r,r.exports,a),r.l=!0,r.exports}a.e=function(e){var t=[];c  [e]?t.push(c[e]):0!==c[e]&&{20:1,22:1}[e]&&t.push(c[e]=new Promise((function(t,r){for(var n="  static/css/"+({}[e]||e)+"."+{0:"31d6cfe0",1:"31d6cfe0",2:"31d6cfe0",3:"31d6cfe0",4:"31d6cfe0"  ,5:"31d6cfe0",6:"31d6cfe0",7:"31d6cfe0",8:"31d6cfe0",9:"31d6cfe0",13:"31d6cfe0",14:"31d6cfe0"  ,15:"31d6cfe0",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"4428412f",21:"31d6  cfe0",22:"f5f9d973",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:  "31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0  ",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d  6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0"}[e]+".chunk.css",f=a.p+n,o=document.getEleme  ntsByTagName("link"),d=0;d<o.length;d++){var u=(l=o[d]).getAttribute("data-href")||l.getAttri  bute("href");if("stylesheet"===l.rel&&(u===n||u===f))return t()}var i=document.getElementsByT  agName("style");for(d=0;d<i.length;d++){var l;if((u=(l=i[d]).getAttribute("data-href"))===n||  u===f)return t()}var s=document.createElement("link");s.rel="stylesheet",s.type="text/css",s.  onload=t,s.onerror=function(t){var n=t&&t.target&&t.target.src||f,o=new Error("Loading CSS ch  unk "+e+" failed.\n("+n+")");o.code="CSS_CHUNK_LOAD_FAILED",o.request=n,delete c[e],s.parentN  ode.removeChild(s),r(o)},s.href=f,document.getElementsByTagName("head")[0].appendChild(s)})).  then((function(){c[e]=0})));var r=f[e];if(0!==r)if(r)t.push(r[2]);else{var n=new Promise((fun  ction(t,n){r=f[e]=[t,n]}));t.push(r[2]=n);var o,d=document.createElement("script");d.charset=  "utf-8",d.timeout=120,a.nc&&d.setAttribute("nonce",a.nc),d.src=function(e){return a.p+"static  /js/"+({}[e]||e)+"."+{0:"0dcbfedf",1:"be44c377",2:"e33efa31",3:"48003346",4:"0a04b03e",5:"43d  ac341",6:"6954f6e4",7:"425a1904",8:"5835084e",9:"5dbe9aab",13:"77df4049",14:"0dec99e0",15:"50  e699e0",16:"5430058f",17:"93832778",18:"1e020288",19:"1635560e",20:"394bfb07",21:"9c705459",2  2:"ab22ff1a",23:"b708b8e6",24:"fdc928ae",25:"1c8a851c",26:"f7b6bbe9",27:"b9081e5a",28:"68d5eb  12",29:"a8186d54",30:"d17ac3af",31:"c00ac75e",32:"91e1ba63",33:"f4da52df",34:"bcde1951",35:"e  486c4c4",36:"1e66e2ec",37:"b8232405",38:"0eccc922",39:"390770ff",40:"3321cc3b",41:"f965b9cf",  42:"ff54410b",43:"01f38b94",44:"0bebd407"}[e]+".chunk.js"}(e);var u=new Error;o=function(t){d  .onerror=d.onload=null,clearTimeout(i);var r=f[e];if(0!==r){if(r){var n=t&&("load"===t.type?"  missing":t.type),c=t&&t.target&&t.target.src;u.message="Loading chunk "+e+" failed.\n("+n+":   "+c+")",u.name="ChunkLoadError",u.type=n,u.request=c,r[1](u)}f[e]=void 0}};var i=setTimeout((  function(){o({type:"timeout",target:d})}),12e4);d.onerror=d.onload=o,document.head.appendChil  d(d)}return Promise.all(t)},a.m=e,a.c=n,a.d=function(e,t,r){a.o(e,t)||Object.defineProperty(e  ,t,{enumerable:!0,get:r})},a.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&O  bject.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModu  le",{value:!0})},a.t=function(e,t){if(1&t&&(e=a(e)),8&t)return e;if(4&t&&"object"===typeof e&  &e&&e.__esModule)return e;var r=Object.create(null);if(a.r(r),Object.defineProperty(r,"defaul  t",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)a.d(r,n,function(t){return   e[t]}.bind(null,n));return r},a.n=function(e){var t=e&&e.__esModule?function(){return e.defa  ult}:function(){return e};return a.d(t,"a",t),t},a.o=function(e,t){return Object.prototype.ha  sOwnProperty.call(e,t)},a.p="/",a.oe=function(e){throw console.error(e),e};var d=this.webpack  Jsonpcovid19india=this.webpackJsonpcovid19india||[],u=d.push.bind(d);d.push=t,d=d.slice();for  (var i=0;i<d.length;i++)t(d[i]);var l=u;r()}([]);
+  //# sourceMappingURL=runtime-main.03bff5e8.js.map</script><script src="/static/js/12.750a4507  .chunk.js"></script><script src="/static/js/main.6eec7809.chunk.js"></script></body>  
+    <script>
+      // Insert this script in your index.html right after the <body> tag.
+      // This will help to prevent a flash if dark mode is the default.
+      (function () {
+        // Change these if you use something different in your hook.
+        var storageKey = 'darkMode';
+        var classNameDark = 'dark-mode';
+        function setClassOnDocumentBody(darkMode) {
+          document.body.classList.add(darkMode ? classNameDark : classNameLight);
+          document.body.classList.remove(
+            darkMode ? classNameLight : classNameDark
+          );
+        }
+        var preferDarkQuery = '(prefers-color-scheme: dark)';
+        var mql = window.matchMedia(preferDarkQuery);
+        var supportsColorSchemeQuery = mql.media === preferDarkQuery;
+        var localStorageTheme = null;
+        try {
+          localStorageTheme = localStorage.getItem(storageKey);
+        } catch (err) {}
+        var localStorageExists = localStorageTheme !== null;
+        if (localStorageExists) {
+          localStorageTheme = JSON.parse(localStorageTheme);
+        }
+        // Determine the source of truth
+        if (localStorageExists) {
+          // source of truth from localStorage
+          setClassOnDocumentBody(localStorageTheme);
+        } else if (supportsColorSchemeQuery) {
+          // source of truth from system
+          setClassOnDocumentBody(mql.matches);
+          localStorage.setItem(storageKey, mql.matches);
+        } else {
+          // source of truth from document.body
+          var isDarkMode = document.body.classList.contains(classNameDark);
+          localStorage.setItem(storageKey, JSON.stringify(isDarkMode));
+        }
+      })();
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        setTimeout(() => {
+          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+        }, 3000); // Wait 3 seconds
+      })(
+        window,
+        document,
+        'script',
+        'https://www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-160698988-1', {
+        site_speed_sample_rate: 1,
+        sample_rate: 1,
+      });
+      ga('send', 'pageview');
+    </script>
+    <footer>
+      <div class="centerdivi">
+      <a href="https://www.linkedin.com/in/ansh-luthra-016452117//" target="_blank" class="foot  er_class"><i class="fa fa-2x fa-linkedin-in"></i></a>
+      <a href="https://github.com/Anshluthra1" target="_blank" class="footer_class"><i class="f  a fa-2x fa-github"></i></a>
+      <a href="https://www.facebook.com/ansh.luthra.35/" target="_blank" class="footer_class"><  i class="fa fa-2x fa-facebook"></i></a>
+      <a href="https://www.instagram.com/anshluthraa1/" target="_blank" class="footer_class"><i   class="fa fa-2x fa-instagram"></i></a>
+      </div>
+      </footer>
+    <!-- End Google Analytics -->
+  </html>
+  
+  - htmlparser.js:244 new HTMLParser
+    [covid19india-react-master 2]/[html-minifier-terser]/src/htmlparser.js:244:13
+  
+  - htmlminifier.js:993 minify
+    [covid19india-react-master 2]/[html-minifier-terser]/src/htmlminifier.js:993:3
+  
+  - htmlminifier.js:1354 Object.exports.minify
+    [covid19india-react-master 2]/[html-minifier-terser]/src/htmlminifier.js:1354:16
+  
+  - index.js:1013 HtmlWebpackPlugin.minifyHtml
+    [covid19india-react-master 2]/[html-webpack-plugin]/index.js:1013:46
+  
+  - index.js:429 HtmlWebpackPlugin.postProcessHtml
+    [covid19india-react-master 2]/[html-webpack-plugin]/index.js:429:40
+  
+  - index.js:254 
+    [covid19india-react-master 2]/[html-webpack-plugin]/index.js:254:25
+  
+  - task_queues.js:93 processTicksAndRejections
+    internal/process/task_queues.js:93:5
+  
+</pre>
